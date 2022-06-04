@@ -1,0 +1,30 @@
+
+<%- include("header") -%>
+
+    <div id="heading" class="box">
+        <h1><%= listTitle %></h1>
+    </div>
+
+    <div class="box">
+        <%  for(let i = 0; i < newItems.length; ++i) { %>
+            <div class="item">
+                <input type="checkbox">
+                <p><%=newItems[i].name %></p>
+                <form class="item" action="/deleteItem" method="POST">
+                    <button class="delete-btn" type="submit" name="list" value="<%= newItems[i]._id %>">&#10006;</button>
+                    <input type="hidden" name="listTitle" value="<%=listTitle %>"></input>
+                </form>
+            </div>
+        <%  }   %>
+
+       
+
+        <form class="item" action="/" method="POST">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button class="add-btn" type="submit" name="list" value="<%= listTitle %>">+</button>
+        </form>
+    </div>
+
+<%- include("footer")  -%>   
+
+ 

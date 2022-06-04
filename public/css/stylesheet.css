@@ -1,0 +1,123 @@
+html {
+  background-color: #EAE9FD;
+  background-image: -webkit-linear-gradient(65deg, #65E5EA 50%, #1DDEE6 50%);
+  min-height: 1000px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+  
+h1 {
+  color: #004466;
+  padding: 10px;
+}
+   
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+   
+#heading {
+  background-color: #65E5EA;
+  text-align: center;
+}
+  
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+  
+.item:last-child {
+  border-bottom: 0;
+}
+  
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #65E5EA;
+}
+  
+input[type="checkbox"] {
+  margin: 20px;
+}
+  
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #004466;
+  inline-size: 313px;
+  overflow-wrap: break-word;
+}
+  
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+  
+.add-btn {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #65E5EA;
+  color: #fff;
+  font-size: 35px;
+  border-width: 0;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.delete-btn {
+  border-color: none;
+  border-width: 0;
+  color:#004466;
+  font-size: 1em;
+  margin-right: 10px;
+  background-color: white;
+  padding-bottom: .25em;
+  padding-top: 4px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms
+}
+
+.delete-btn:hover, .delete-btn:focus {
+  transform: scale(1.2);
+}
+
+.add-btn:hover, .add-btn:focus {
+  transform: scale(1.1);
+}
+  
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+  
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #65E5EA;
+}
+  
+  
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+  
+footer {
+  color: white;
+  color: rgb (0, 0, 0, 0.5);
+  text-align: center; 
+}
