@@ -12,18 +12,6 @@ const password = process.env.passKey;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
-
-app.use( function(req, res, next) { // Ignore favicon.ico requests.
-
-    if (req.originalUrl && req.originalUrl.split("/").pop() === 'favicon.ico') {
- 
-       return res.sendStatus(204);
- 
-    }
- 
-    return next();
- 
- });
   
 
 //connect to mongodb
