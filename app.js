@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
   
 
 //connect to mongodb
-mongoose.connect("mongodb+srv://admin-mark:Victor2002!@cluster0.vgavw.mongodb.net/todolistDB");
+mongoose.connect(`mongodb+srv://admin-mark:${password}@cluster0.vgavw.mongodb.net/todolistDB`);
 
 // Create todolist schema
 const itemsSchema = new mongoose.Schema({
