@@ -172,7 +172,7 @@ app.get("/:topic", (req, res) => {
 
 })
 
-app.listen(port, () => {
-    console.log(`listening on port: ${port}`);
+app.listen(proccess.env.PORT, () => {
+    console.log(`listening on port: ${process.env.PORT}`);
 });
 
